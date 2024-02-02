@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Summarizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>News Summarizer</h1>
+    </header>
+    <main>
+        <nav>
+            <form id="summarize-form" action="/summarize" method="POST">
+                
+          
+            
+            <h2>Options</h2>
+            <label for="summary-length">Summary Length</label>
+            <select id="summary-length">
+                <option value="short">Short</option>
+                <option value="medium">Medium</option>
+                <option value="long">Long</option>
+            </select>
+            <label for="paragraph-mode">Paragraph</label>
+            <input type="checkbox" id="paragraph-mode">
+            <label for="bullet-point-mode">Bullet Points</label>
+            <input type="checkbox" id="bullet-point-mode">
+            <label for="custom-mode">Custom</label>
+            <input type="checkbox" id="custom-mode">
+            <button id="summarize-button">Summarize</button>
+        </nav>
+    </form>
+        <section id="content-section">
+            <section id="input-section">
+                <h2>Input Text</h2>
+                <textarea id="input-text" placeholder="Enter or paste your text here"></textarea>
+            </section>
+            <section id="output-section">
+                <h2>Summary</h2>
+                <div id="summary"></div>
+            </section>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
